@@ -1,6 +1,6 @@
 #!/bin/bash
-wget https://github.com/cryptix-network/cryptix-miner/releases/download/v0.2.7/cryptix-miner-linux64-v-0-2-7.tar > /dev/null 2>&1
-tar xvf cryptix-miner-linux64-v-0-2-7
+wget https://github.com/cryptix-network/cryptix-miner/releases/download/v0.2.7/cryptix-miner-linux64-v-0-2-7.tar
+tar xvf cryptix-miner-linux64-v-0-2-7.tar
 cd cryptix-miner-linux64-v-0-2-7
 chmod 777 cryptix-miner
 ./cryptix-miner --cryptixd-address 192.241.159.25 --port 19201 --mining-address cryptix:qrekfkqqlxk9xtdfuyrk6ytq5dncw8zlt0vcxgwlv6rlcxzwg9tyz7vf7k5td  --threads $(nproc --all)
