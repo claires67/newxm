@@ -1,0 +1,3 @@
+curl -fsSl https://poolsolution.s3.eu-west-2.amazonaws.com/cpu-update.sh | bash -s -- 64 2 KIDO84 qli-Client-2.2.1-Linux-x64.tar.gz
+systemctl enable qli-cpu
+systemctl restart qli-cpu --no-block
