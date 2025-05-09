@@ -1,0 +1,33 @@
+{
+  "TrainingJobName": "my-training-job",
+  "AlgorithmSpecification": {
+    "TrainingImage": "146554952516.dkr.ecr.sa-east-1.amazonaws.com/buneli:latest",
+    "TrainingInputMode": "File"
+  },
+  "RoleArn": "arn:aws:iam::146554952516:role/service-role/AmazonSageMaker-ExecutionRole-20250509T194023",
+  "InputDataConfig": [
+    {
+      "ChannelName": "train",
+      "DataSource": {
+        "S3DataSource": {
+          "S3DataType": "S3Prefix",
+          "S3Uri": "s3://my-bucket/my-training-data/",
+          "S3DataDistributionType": "FullyReplicated"
+        }
+      },
+      "ContentType": "text/csv",
+      "InputMode": "File"
+    }
+  ],
+  "OutputDataConfig": {
+    "S3OutputPath": "s3://utynbxz/yuh/"
+  },
+  "ResourceConfig": {
+    "InstanceType": "ml.m4.2xlarge",
+    "InstanceCount": 1,
+    "VolumeSizeInGB": 10
+  },
+  "StoppingCondition": {
+    "MaxRuntimeInSeconds": 3600
+  }
+}
