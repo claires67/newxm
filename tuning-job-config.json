@@ -1,0 +1,33 @@
+{
+  "Strategy": "Bayesian",
+  "HyperParameterTuningJobObjective": {
+    "Type": "Maximize",
+    "MetricName": "validation-accuracy"
+  },
+  "ResourceLimits": {
+    "MaxNumberOfTrainingJobs": 250,
+    "MaxParallelTrainingJobs": 2
+  },
+  "ParameterRanges": {
+    "ContinuousParameterRanges": [
+      {
+        "Name": "learning_rate",
+        "MinValue": "0.001",
+        "MaxValue": "0.1"
+      }
+    ],
+    "IntegerParameterRanges": [
+      {
+        "Name": "batch_size",
+        "MinValue": "16",
+        "MaxValue": "128"
+      }
+    ],
+    "CategoricalParameterRanges": [
+      {
+        "Name": "optimizer",
+        "Values": ["sgd", "adam"]
+      }
+    ]
+  }
+}
