@@ -29,5 +29,5 @@
   },
   "StoppingCondition": {
     "MaxRuntimeInSeconds": 432000
-  }
+      }
 }
