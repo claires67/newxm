@@ -27,7 +27,5 @@
       {
         "Name": "optimizer",
         "Values": ["sgd", "adam"]
-      }
-    ]
-  }
+         }
 }
