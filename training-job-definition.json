@@ -25,9 +25,9 @@
   "ResourceConfig": {
     "InstanceType": "ml.m4.2xlarge",
     "InstanceCount": 1,
-    "VolumeSizeInGB": 10
+    "VolumeSizeInGB": 50
   },
   "StoppingCondition": {
-    "MaxRuntimeInSeconds": 3600
+    "MaxRuntimeInSeconds": 432000
   }
 }
